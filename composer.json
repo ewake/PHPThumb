@@ -1,0 +1,9 @@
+{
+    "name": "weotch/phpthumb",
+    "description": "Fork of PHPThumb that adds auto-image rotation based on EXIF data and composer support",
+    "authors": [
+        {
+            "name": "Robert Reinhard",
+        }
+    ],
+}
