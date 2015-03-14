@@ -28,9 +28,14 @@
  */
 
 // define some useful constants
-define('THUMBLIB_BASE_PATH', dirname(__FILE__));
-define('THUMBLIB_PLUGIN_PATH', THUMBLIB_BASE_PATH . '/thumb_plugins/');
-define('DEFAULT_THUMBLIB_IMPLEMENTATION', 'gd');
+if( !defined( 'THUMBLIB_BASE_PATH' ))
+	define('THUMBLIB_BASE_PATH', dirname(__FILE__));
+
+if( !defined( 'THUMBLIB_PLUGIN_PATH' ))
+	define('THUMBLIB_PLUGIN_PATH', THUMBLIB_BASE_PATH . '/thumb_plugins/');
+
+if( !defined( 'DEFAULT_THUMBLIB_IMPLEMENTATION' ))
+	define('DEFAULT_THUMBLIB_IMPLEMENTATION', 'gd');
 
 /**
  * Include the PhpThumb Class
